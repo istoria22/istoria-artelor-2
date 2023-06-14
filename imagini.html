@@ -1,0 +1,438 @@
+<html>
+<head>
+<title>Hai noroc!</title>
+<style>
+body {
+margin-top: 30px;
+}
+</style> 
+</head>
+
+<script>
+function displayRandomImages() 
+{
+   //array of images with image location, height, and width
+   var imageArray = [
+   { 
+     //address URL of the image
+     src: "https://i.ibb.co/DWSTNMy/image148.jpg",
+     //size for the image to be display on webpage
+     width: "400",
+     height: "400"
+   }, 
+   {
+     src: "https://i.ibb.co/59zLPt3/image145.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+     src: "https://i.ibb.co/HhqqqMs/image144.jpg",
+     width: "400",
+     height: "400"
+   },
+   {
+     src: "https://i.ibb.co/GMj8W2m/image142.jpg",
+     width: "400",
+     height: "400"
+    },
+    {
+     src: "https://i.ibb.co/M8RTb1v/image139.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/DQyssLH/image137.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/MZwDB0Q/image136.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/KG5x70m/image133.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/2Kq8xhp/image131.jpgg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/9nYKMw4/image130.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/GVM4kjk/image127.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/L8gXQ1Z/image126.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/WvQKGMN/image123.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/Zc3hhq4/image122.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/2qbCWSn/image121.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/vdvL7mL/image120.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/zsXJbwL/image118.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/9cpRZ3P/image116.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/sPBx2Pf/image114.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/TW9HGqW/image111.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/HPcqS7v/image109.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/7RQ6q2X/image108.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/jb1j92b/image106.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/1qfVc9S/image102.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/y6FDRhF/image105.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/kmtnB9p/image100.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/qg2YhKy/image098.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/4jBJW8r/image097.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/17HgQCb/image095.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/3N5dQns/image093.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/0Y4RnwM/image091.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/8zRBvVg/image087.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/VCc05BH/image086.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/S5vH5yd/image084.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/m9cMHgz/image082.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/3kBj9Cm/image079.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/BG6Vg0X/image078.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/smsnYzZ/image076.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/y8r4qjc/image074.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/KW4JWzw/image072.gif",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/qN4nrrb/image070.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/mbhtpZk/image068.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/prhZwGN/image066.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/8gR3hXn/image065.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/GtK3tCk/image063.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/gDChP5C/image060.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/R78ftBW/image058.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/JdY1JcB/image057.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/7Q5C5C8/image054.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/wwWDJZv/image053.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/jwy6cSw/image048.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/yhfcWXx/image051.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/K96cPvD/image046.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/0VtXWjq/image043.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/BwHrC1h/image041.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/cTdtM9k/image040.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/kQ3gFvw/image038.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/gtmvWK9/image035.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/wwhjk2N/image033.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/znH2ZZZ/image032.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/NxJ0ypz/image030.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/sqNt3Hm/image027.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/KmfPtFh/image025.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/5cNhGrq/image021.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/WWr9hRn/image023.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/9nc87dd/image019.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/YhXf1Q2/image017.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+   src: "https://i.ibb.co/d5ZCGyh/image015.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/Msh1xNH/image013.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/TgqtdkS/image011.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/DMhb1Yc/image009.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/52q7TNg/image008.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/BChnm2P/image006.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+    src: "https://i.ibb.co/QfMRxRY/image002.jpg",
+     width: "400",
+     height: "400"
+   }, 
+   {
+     src: "https://i.ibb.co/vjdgCR8/image004.jpg",
+     width: "400",
+     height: "400"
+   } 
+   ];
+  
+    //find the length of the array of images
+    var arrayLength = imageArray.length;
+    var newArray = [];
+    for (var i = 0; i < arrayLength; i++) {
+        newArray[i] = new Image();
+        newArray[i].src = imageArray[i].src;
+        newArray[i].width = imageArray[i].width;
+        newArray[i].height = imageArray[i].height;
+    }
+   
+  // create random image number
+  function getRandomNum(min, max) 
+  {
+      // generate and return a random number for the image to be displayed 
+      imgNo = Math.floor(Math.random() * (max - min + 1)) + min;
+      return newArray[imgNo];
+  }  
+
+  // 0 is first image and (preBuffer.length - 1) is last image of the array
+  var newImage = getRandomNum(0, newArray.length - 1);
+ 
+  // remove the previous images
+  var images = document.getElementsByTagName('img');
+  var l = images.length;
+  for (var p = 0; p < l; p++) {
+     images[0].parentNode.removeChild(images[0]);
+  }
+  // display the new random image  
+  document.body.appendChild(newImage);
+}
+</script>
+
+<body>
+<div>
+<center>
+<h2 style="color:green"> Imagini randomizate - Istoria artelor </h2>
+<h4> Apasam butonul pentru a schimba imaginea. Bafta rebeata! </h4>
+<button onclick="displayRandomImages();"> Hai, paehali! </button>
+</center> 
+</div>
+</body>
+</html>
+
+ 
